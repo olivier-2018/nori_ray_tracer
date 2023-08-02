@@ -65,3 +65,8 @@ jobs:
       working-directory: ${{github.workspace}}/build
       shell: bash
       run: cmake --build . --config $BUILD_TYPE --parallel
+
+    # - name: Test
+    #   working-directory: ${{github.workspace}}
+    #   shell: bash
+    #   run: python3 run_tests.py
