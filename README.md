@@ -39,7 +39,10 @@ git pull upstream master
 ```sh
 git submodule update --init --recursive
 ```
-
+- Commit locally and push to remote:
+```sh
+git push -u origin master
+```
 
 
 ### Results
