@@ -1,24 +1,46 @@
-[![CS440 Banner](https://rgl.s3.eu-central-1.amazonaws.com/media/uploads/wjakob/2017/02/16/cs440-logo_web.jpg)](https://rgl.s3.eu-central-1.amazonaws.com/media/uploads/wjakob/2017/02/20/cs440-rgl.jpg)
+<!-- [![CS440 Banner](https://rgl.s3.eu-central-1.amazonaws.com/media/uploads/wjakob/2017/02/16/cs440-logo_web.jpg)](https://rgl.s3.eu-central-1.amazonaws.com/media/uploads/wjakob/2017/02/20/cs440-rgl.jpg) -->
 
-## Nori Version 2
-![Build status](https://github.com/wjakob/nori/workflows/Build/badge.svg)
+![CS440 Banner](https://wjakob.github.io/nori/images/logo-beveled.png)
 
-Nori is a simple ray tracer written in C++. It runs on Windows, Linux, and
-Mac OS and provides basic functionality that is required to complete the
-assignments in the course Advanced Computer Graphics taught at EPFL.
+## Personal developments on Nori 2
+![Build status](https://github.com/https://github.com/olivier-2018/nori_ray_tracer/workflows/Build/badge.svg)
 
-### Course information and framework documentation
+### Acknowledgements
+[Nori project website](https://wjakob.github.io/nori)   
+[Nori Github repository](https://github.com/wjakob/nori)  
+[Realistic Graphics Lab at EPFL](http://rgl.epfl.ch/)   
 
-For access to course information including slides and reading material, visit the main [Advanced Computer Graphics website](https://rgl.epfl.ch/courses/ACG17). The Nori 2 framework and coding assignments will be described on the [Nori website](https://wjakob.github.io/nori).
+Nori is a simple ray tracer written in C++ used at the Realistic Graphics Lab to teach Advanced Computer Graphics to computer science Master students at EPFL.   
 
-### Note to researchers and students from other institutions
+The publicly available source code therefore does not contain any rendering code but is meant for the students to develop their own full-fledged physically-based renderer as part of their assignments.   
 
-Last year's version of Nori including a full set of assignment descriptions can
-be found in the following [archive](https://github.com/wjakob/nori-old).
+The current repository contains my personal implementation of the rendering assignments. The results folder remains however private and not available for public download. See results sections below for illustrations.
 
+Thanks for making the Nori source code (mostly) available.  
+:oD
 
-### Known Issues
-There is a known issue with the NanoGUI version that Nori uses: on Linux systems with an integrated Intel GPU, a bug in the Mesa graphics drivers causes the GUI to freeze on startup. A workaround is to temporarily switch to an older Mesa driver to run Nori. This can be done by running
+### Getting started
+- fork the [Nori SOURCE repository](https://github.com/wjakob/nori) in Gihub
+- clone the forked repository locally: 
+```sh
+git clone git@github.com:olivier-2018/nori_ray_tracer.git
+cd nori_ray_tracer
 ```
-export MESA_LOADER_DRIVER_OVERRIDE=i965
+- Create a git remote for the nori SOURCE repository
+```sh
+git remote add upstream git@github.com:wjakob/nori.git
+git remote -v
 ```
+- Pull the Nori source repo (in case a commit was made on the source repo since forking it): 
+```sh
+git pull upstream master
+```
+- Initialize submodules dependencies: 
+```sh
+git submodule update --init --recursive
+```
+
+
+
+### Results
+work in rogress
